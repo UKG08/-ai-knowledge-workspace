@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Environment variables (IMPORTANT - keeps your API keys safe!)
+.env
+
+# Data files
+data/uploads/*
+data/vector_db/*
+!data/uploads/.gitkeep
+!data/vector_db/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
