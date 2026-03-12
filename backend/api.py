@@ -57,8 +57,20 @@ pdf_processor = None
 embedder = None
 vector_store = None
 chat_engine = None
+from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+import os
 
+app = FastAPI()
 
+# Serve React build folder
+app.mount("/assets", StaticFiles(directory="frontend/dist/assets"), name="assets")
+
+# Serve main React index.html
+@app.get("/")
+def serve_react():
+    return FileResponse("frontend/dist/index.html")
 @app.on_event("startup")
 async def startup_event():
 
