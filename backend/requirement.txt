@@ -1,5 +1,12 @@
 # AI Knowledge Workspace - Python 3.11 Compatible
 # Fixed version conflicts
+  
+fastapi==0.111.0
+uvicorn==0.30.0
+numpy==1.26.4
+scikit-learn==1.4.2
+pandas==2.2.2
+python-dotenv==1.0.1
 
 # Core RAG
 langchain==0.1.20
