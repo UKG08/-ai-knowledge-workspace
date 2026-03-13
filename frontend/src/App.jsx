@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 import './App.css'
 
-const API_URL = 'http://localhost:8000'
+const API_URL = 'https://ai-knowledge-workspace-6.onrender.com/'
 
 // Particle Component
 function Particles() {
